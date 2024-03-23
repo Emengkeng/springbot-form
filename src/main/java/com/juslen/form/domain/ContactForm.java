@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Form {
+public class ContactForm {
     @NotEmpty
     private String first;
 
