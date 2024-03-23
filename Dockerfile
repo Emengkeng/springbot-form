@@ -1,3 +1,8 @@
+FROM ubuntu:latest AS build
+
+RUN apt-get update
+RUN apt-get install openjdk-17-jdk -y
+
 # Use an official Maven image as the base image
 FROM maven:3.8.4-openjdk-11-slim AS build
 # Set the working directory in the container
