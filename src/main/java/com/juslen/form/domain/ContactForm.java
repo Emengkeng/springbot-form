@@ -17,5 +17,8 @@ public class ContactForm {
     @NotEmpty
     private String last;
 
+    @NotEmpty
+    private String email;
+
     private String comment;
 }
