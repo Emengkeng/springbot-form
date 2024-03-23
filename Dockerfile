@@ -1,5 +1,6 @@
+# Use linux os
 FROM ubuntu:latest AS build
-
+# Update linux os and install java sdk 17
 RUN apt-get update
 RUN apt-get install openjdk-17-jdk -y
 
