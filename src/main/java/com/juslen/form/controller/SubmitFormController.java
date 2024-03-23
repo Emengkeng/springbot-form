@@ -21,6 +21,6 @@ public class SubmitFormController {
     public String contactFormSubmission(@Valid @ModelAttribute final ContactForm contactform){
         System.out.println(contactform.toString());
         submitFormService.register(contactform);
-        return "forward:/static/success.html";
+        return "redirect:/success.html";
     }
 }
